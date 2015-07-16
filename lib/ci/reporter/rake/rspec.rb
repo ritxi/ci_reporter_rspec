@@ -3,7 +3,7 @@ require 'ci/reporter/rake/utils'
 namespace :ci do
   namespace :setup do
     task :spec_report_cleanup do
-      rm_rf ENV["CI_REPORTS"] || "spec/reports"
+      # rm_rf ENV["CI_REPORTS"] || "spec/reports"
     end
 
     def setup_spec_opts(*extra_options)
